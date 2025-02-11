@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Task</title>
+    <style>
+      * {
+        position: relative;
+        text-align: center;
+        padding: 20px;
+      }
+      img {
+        width: 80%;
+        height: 80vh;
+      }
+      .container1 {
+        border: 1px solid red;
+        overflow: hidden;
+        background-color: aqua;
+      }
+      button {
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+      }
+      #Translate:hover ~ img {
+        transition: all 2s linear;
+        transform: translate(200px, 50px);
+      }
+      #Rotate:hover ~ img {
+        transform: rotate(180deg);
+        transition: all 2s linear;
+      }
+      #Scale:hover ~ img {
+        transition: all 2s linear;
+        transform: Scale(1.2, 1.5);
+      }
+      #Skew:hover ~ img {
+        transition: all 2s linear;
+        transform: skew(20deg, 30deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <button id="Translate">Translate</button>
+      <button id="Rotate">Rotate</button>
+      <button id="Scale">Scale</button>
+      <button id="Skew">Skew</button>
+      <br />
+      <img src="pic.jpg" alt="" />
+    </div>
+  </body>
+</html>
